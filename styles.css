@@ -1,0 +1,253 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f5f7;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #4a5568;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Align Logo and Title */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .logo {
+    width: 80px;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Navigation Menu */
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2d9cdb;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: #2d3748;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Form Styling */
+.contact-form {
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input, select, textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    border: 1px solid #cbd5e0;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #2d9cdb;
+    outline: none;
+}
+
+/* Contact Info Styling */
+.contact-info {
+    background-color: #f8fafc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info h2 {
+    margin-bottom: 10px;
+    color: #2d3748;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    color: #4a5568;
+}
+
+/* Button Styling */
+button {
+    width: fit-content;
+    padding: 12px 20px;
+    background-color: #2d9cdb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #1e81b0;
+    transform: scale(1.05);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #4a5568;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #edf2f7;
+}
+
+/* Buttons */
+.Button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #2d9cdb;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: 600;
+}
+
+.Button:hover {
+    background-color: #1e81b0;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    display: flex; /* Align items horizontally */
+    justify-content: space-between; /* Spread content across */
+    align-items: center; /* Align items vertically */
+    padding: 15px 40px;
+    background-color: #4a5568;
+    color: white;
+    margin-top: 30px;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Footer Links */
+footer nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+footer nav ul li a:hover {
+    color: #2d9cdb;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    main {
+        padding: 30px;
+    }
+
+    .Button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo-container {
+        margin-bottom: 15px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    footer nav ul {
+        justify-content: center;
+    }
+}

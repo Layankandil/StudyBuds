@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Available Study Groups - Study Buds</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Logo" class="logo">
+            <h1>StudyBuds</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About_Us.html">About Us</a></li>
+                <li><a href="Contact_Us.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="filter-section">
+            <h1>Available Study Groups</h1>
+            <label for="interest">Filter by Interest:</label>
+            <select id="interest">
+                <option value="all">All</option>
+                <option value="science">Science</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="literature">Literature</option>
+                <option value="history">History</option>
+                <option value="art">Art</option>
+                <option value="technology">Technology</option>
+            </select>
+        </section>
+
+        <section class="group-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Group Name</th>
+                        <th>Subject</th>
+                        <th>Schedule</th>
+                        <th>Description</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-subject="science">
+                        <td>Science Explorers</td>
+                        <td>Science</td>
+                        <td>Monday, 5 PM</td>
+                        <td>Explore various scientific topics together.</td>
+                        <td><button class="join-button">Join</button></td>
+                    </tr>
+                    <tr data-subject="mathematics">
+                        <td>Math Wizards</td>
+                        <td>Mathematics</td>
+                        <td>Tuesday, 6 PM</td>
+                        <td>Collaborate on solving complex math problems.</td>
+                        <td><button class="join-button">Join</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="About_Us.html">About</a></li>
+                <li><a href="Contact_Us.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Study Buds. All rights reserved.</p>
+    </footer>
+</body>
+</html>
