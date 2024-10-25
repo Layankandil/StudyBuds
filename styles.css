@@ -10,6 +10,8 @@ html, body {
     font-family: 'Poppins', sans-serif;
     background-color: #f2f5f7;
     line-height: 1.6;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack children vertically */
 }
 
 /* Header */
@@ -58,17 +60,18 @@ nav ul li a {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
-    font-size: clamp(0.9rem, 2vw, 1.4rem); /* Font size for nav links on large screens */
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem); /* Adjusted font size for nav links */
 }
 
 nav ul li a:hover {
     color: #2d9cdb;
 }
 
-/* Main Content */
 main {
-    max-width: 1200px;
-    margin: 0 auto;
+    flex: 1; /* Allow main to grow and fill available space */
+    width: 100%; /* Set the width to 85% of the page */
+    max-width: 1200px; /* Optional: Set a max width */
+    margin: 0 auto; /* Center the main content */
     padding: 4vw 2vw; /* Responsive padding */
     background-color: white;
     border-radius: 10px;
@@ -223,6 +226,7 @@ a:hover {
     text-decoration: underline; 
 }
 
+/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
@@ -230,10 +234,8 @@ footer {
     padding: 2vw 4vw; /* Responsive padding */
     background-color: #4a5568;
     color: white;
-    margin-top: 2vw; /* Responsive margin */
+    margin-top: auto; /* Push footer to the bottom */
     border-radius: 8px 8px 0 0;
-    position: relative; /* Ensure footer stays at the end of the page */
-    bottom: 0;
     width: 100%; /* Full width for footer */
 }
 
@@ -273,11 +275,11 @@ footer p {
     nav ul {
         flex-direction: row; /* Keep nav links on the same line */
         align-items: center;
-        gap: 10px; /* Adjusted gap for smaller screens */
+        gap: 8px; /* Adjusted gap for smaller screens */
     }
 
     main {
-        padding: 2vw; /* Responsive padding */
+        padding: 1.5vw; /* Responsive padding */
     }
 
     .Button {
@@ -286,7 +288,7 @@ footer p {
     }
 
     .logo-container {
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
 
     footer {
@@ -300,13 +302,14 @@ footer p {
     }
 
     header {
-        padding: 2vw 3vw; /* Responsive padding */
-        margin-bottom: 3vw; /* Responsive margin */
-        border-radius: 4px;
+        padding: 1.5vw 2vw; /* Responsive padding */
+        margin-bottom: 2vw; /* Responsive margin */
+        border-radius: 3px;
     }
 
     .logo-container {
-        gap: 1vw; /* Responsive gap */
+        gap: 2vw; /* Responsive gap */
+        margin:2vw;
     }
 
     header .logo {
@@ -315,46 +318,50 @@ footer p {
     }
     
     header h1 {
-        font-size: clamp(1.2rem, 4vw, 1.8rem); /* Smaller header heading for small screens */
+        font-size: clamp(1.1rem, 3.8vw, 1.8rem); /* Smaller header heading for small screens */
     }
     
-    h1, h2 {
-        font-size: clamp(1.2rem, 4vw, 2rem); /* Smaller max size for h1 */
+    h1 {
+        font-size: clamp(1rem, 3.6vw, 1.6rem); /* Smaller max size for h1 */
     }
 
     h2 {
-        font-size: clamp(1rem, 3vw, 1.5rem); /* Smaller h2 for small screens */
+        font-size: clamp(0.9rem, 3vw, 1.5rem); /* Smaller h2 for small screens */
     }
 
     h3 {
-        font-size: clamp(0.9rem, 3vw, 1.1rem); /* Smaller h3 for small screens */
+        font-size: clamp(0.7rem, 2.8vw, 1.1rem); /* Smaller h3 for small screens */
     }
 
     th, td {
-        font-size: clamp(0.9rem, 3vw, 1rem); /* Smaller font size for table data */
+        font-size: clamp(0.7rem, 2.6vw, 0.9rem); /* Smaller font size for table data */
     }
 
     /* Very small devices under 400px */
     @media (max-width: 400px) {
         th, td {
-            font-size: clamp(0.8rem, 3vw, 0.9rem); /* Smaller font size for table data */
-            padding: 0.5vw; /* Less padding for closer cells */
+            font-size: clamp(0.7rem, 2.6vw, 0.9rem); /* Smaller font size for table data */
+            padding: 0px; /* Less padding for closer cells */
         }
     }
 
     nav ul li a {
-        font-size: clamp(0.8rem, 3vw, 1rem); /* Smaller font size for nav links on small screens */
+        font-size: clamp(0.7rem, 2.6vw, 0.9rem); /* Smaller font size for nav links on small screens */
     }
 
     label {
-        font-size: clamp(1rem, 2.5vw, 1.2rem); /* Responsive size for labels */
+        font-size: clamp(0.8rem, 2.5vw, 1rem); /* Responsive size for labels */
     }
 
     input, select, textarea {
-        font-size: clamp(1rem, 2.5vw, 1.2rem); /* Responsive size for form inputs */
+        font-size: clamp(0.8rem, 2.5vw, 0.9rem); /* Responsive size for form inputs */
     }
 
     select {
-        font-size: clamp(0.9rem, 2.5vw, 1rem); /* Smaller size for select on small screens */
+        font-size: clamp(0.7rem, 2.3vw, 0.8rem); /* Smaller size for select on small screens */
+    }
+
+    button{
+        font-size: clamp(0.7rem, 2.3vw, 0.8rem); /* Smaller size for select on small screens */
     }
 }
