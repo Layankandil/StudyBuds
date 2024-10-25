@@ -24,9 +24,12 @@
         <h1>Create New Study Group</h1>
         <form action="#">
             <label for="group-name">Group Name:</label>
-            <input type="text" id="group-name" name="group-name" required>
+            <input type="text" id="group-name" name="group-name" required
+                placeholder="Enter a unique group name. e.g., Science Explorers" 
+                pattern="^[A-Za-z0-9\s]+$" 
+                title="Group name can only contain letters, numbers, and spaces.">
             <label for="interest">Subject:</label>
-            <select id="interest">
+            <select id="interest" required>
                 <option value="all">All</option>
                 <option value="science">Science</option>
                 <option value="mathematics">Mathematics</option>
@@ -36,9 +39,15 @@
                 <option value="technology">Technology</option>
             </select>
             <label for="schedule">Schedule:</label>
-            <input type="text" id="schedule" name="schedule" required>
+            <input type="text" id="schedule" name="schedule" required
+                placeholder="e.g., Mondays at 5 PM" 
+                title="Enter the schedule for the group." 
+                pattern="^[A-Za-z0-9\s,]+$" 
+                title="Schedule can contain letters, numbers, and spaces (e.g., 'Mondays at 5 PM').">
             <label for="description">Description:</label>
-            <textarea id="description" name="description" required></textarea>
+            <textarea id="description" name="description" required
+            placeholder="Provide a brief description of the group." pattern="^[A-Za-z0-9\s,.!?-]*$" 
+            title="Description can contain letters, numbers, and basic punctuation."></textarea>
             <button type="submit">Create Group</button>
         </form>
     </main>
