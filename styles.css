@@ -78,6 +78,10 @@ main {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.about_text{
+    color:#4a5568
+}
+
 #SB {
     color: #ffffff;
 }
@@ -85,16 +89,16 @@ main {
 h1, h2 {
     margin-bottom: 2vw; /* Responsive margin */
     color: #2d3748;
-    font-size: clamp(1.5rem, 4vw, 2.5rem); /* Responsive heading size */
+    font-size: clamp(1.3rem, 3.6vw, 2.2rem); /* Responsive heading size */
 }
 
 h2 {
-    font-size: clamp(1rem, 3vw, 1.5rem); /* Smaller h2 for small screens */
+    font-size: clamp(1.1rem, 3.2vw, 1.8rem); /* Smaller h2 for small screens */
 }
 
 h3 {
     margin-bottom: 1.5vw; /* Margin for h3 */
-    font-size: clamp(1rem, 3vw, 1.2rem); /* Smaller h3 for small screens */
+    font-size: clamp(1.2rem, 3vw, 1.3rem); /* Smaller h3 for small screens */
 }
 
 p {
@@ -180,6 +184,10 @@ table {
     margin-top: 2vw; /* Responsive margin */
 }
 
+td{
+    border-right: 0.05vw solid lightgray;
+}
+
 th, td {
     padding: 1.5vw; /* Responsive padding */
     text-align: left;
@@ -217,7 +225,7 @@ tr:nth-child(even) {
 }
 
 a {
-    color: #000305; 
+    color: grey; 
     text-decoration: none; 
 }
 
@@ -322,26 +330,26 @@ footer p {
     }
     
     h1 {
-        font-size: clamp(1rem, 3.6vw, 1.6rem); /* Smaller max size for h1 */
+        font-size: clamp(0,9rem, 3.5vw, 1.5rem); /* Smaller max size for h1 */
     }
 
     h2 {
-        font-size: clamp(0.9rem, 3vw, 1.5rem); /* Smaller h2 for small screens */
+        font-size: clamp(0.9rem, 3.3vw, 1.5rem); /* Smaller h2 for small screens */
     }
 
     h3 {
-        font-size: clamp(0.7rem, 2.8vw, 1.1rem); /* Smaller h3 for small screens */
+        font-size: clamp(0.8rem, 2.8vw, 1.2rem); /* Smaller h3 for small screens */
     }
 
     th, td {
         font-size: clamp(0.7rem, 2.6vw, 0.9rem); /* Smaller font size for table data */
     }
 
-    /* Very small devices under 400px */
-    @media (max-width: 400px) {
+    /* Very small devices under 380px */
+    @media (max-width: 380px) {
         th, td {
             font-size: clamp(0.7rem, 2.6vw, 0.9rem); /* Smaller font size for table data */
-            padding: 0px; /* Less padding for closer cells */
+            padding: 0.6vw; /* Less padding for closer cells */
         }
     }
 
@@ -362,6 +370,6 @@ footer p {
     }
 
     button{
-        font-size: clamp(0.7rem, 2.3vw, 0.8rem); /* Smaller size for select on small screens */
+        font-size: clamp(0.6rem, 2.2vw, 0.6rem); /* Smaller size for select on small screens */
     }
 }
