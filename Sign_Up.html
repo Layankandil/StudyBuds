@@ -22,12 +22,16 @@
     <main>
         <h1>Sign Up for Study Buds</h1>
         <form action="backend/signup.php" method="POST">
-            <label for="name">Name:</label>
+            <label for="FullName">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="userName">User Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
+            <label for="password">Biography:</label>
+            <input type="password" id="password" name="password" placeholder="Optional">
             <button type="submit">Sign Up</button>
         </form>
     </main>
