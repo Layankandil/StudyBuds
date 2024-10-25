@@ -21,17 +21,19 @@
     </header>
     <main>
         <h1>Sign Up for Study Buds</h1>
-        <form action="backend/signup.php" method="POST">
-            <label for="FullName">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+        <form action="#" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="e.g., Layan Kandil" pattern="[A-Za-z\s]+" title="Only letters and spaces allowed.">
             <label for="userName">User Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="userName" name="userName" required placeholder="e.g., Dem12aa" pattern="[A-Za-z0-9]+" title="Only letters and numbers allowed.">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required placeholder="e.g., example@mail.com" 
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address.">
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <label for="password">Biography:</label>
-            <input type="password" id="password" name="password" placeholder="Optional">
+            <input type="password" id="password" name="password" required pattern="(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}" 
+            title="Must be at least 8 characters long and include at least one number and one special character.">
+            <label for="bio">Biography:</label>
+            <input type="text" id="bio" name="bio" placeholder="Tell us about yourself (optional)">
             <button type="submit">Sign Up</button>
         </form>
     </main>
